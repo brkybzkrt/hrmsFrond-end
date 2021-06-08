@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+footer{
+position: absolute;
+bottom: 0;
+width: 100%;
+
+}
+
+.pad{
+
+  padding-top: 2rem;
+}
+

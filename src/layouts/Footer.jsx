@@ -68,7 +68,7 @@ export default function Footer() {
            
             <p style={{marginTop:"2rem",marginRight:"3rem"}}>
             Copyright 
-             <span> <Icon name="copyright" ></Icon>2021</span>
+             <span> <Icon name="copyright" ></Icon> -2021</span>
 
             </p>
 

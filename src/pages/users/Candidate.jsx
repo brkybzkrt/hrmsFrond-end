@@ -1,7 +1,7 @@
 import React from 'react'
 import CandidateService from '../../services/candidateService';
 import {useState,useEffect} from 'react'
-import { Table } from 'semantic-ui-react'
+import { Container, Table } from 'semantic-ui-react'
 
 export default function Candidate() {
 
@@ -16,6 +16,7 @@ export default function Candidate() {
        )
     return (
         <div>
+            <Container>
             <Table  fixed>
              <Table.Header>
                     <Table.Row>
@@ -43,6 +44,7 @@ export default function Candidate() {
                 ))}
 
              </Table>
+             </Container>
         </div>
     )
 }

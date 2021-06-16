@@ -1,16 +1,77 @@
+*{
+  font-family: 'Ubuntu', sans-serif;
+  
+}
 .App {
   text-align: center;
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  
 }
 
+
 footer{
-position: absolute;
+position: relative;
 bottom: 0;
 width: 100%;
 
 }
 
+.appPadding{
+
+  padding: 10px;
+}
+
 .pad{
 
   padding-top: 2rem;
+}
+
+.abc:hover{
+
+ opacity: 0.1;
+ transition: all 5s;
+}
+
+.dene:hover{
+
+  margin-right: 100px;
+
+  transition: all 4s;
+}
+
+
+input,label{
+
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px;
+}
+select{
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.addJobDiv{
+  background: #2980b9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  color: rgb(255, 255, 255);
+
+  border-radius: 1%;
+  
+width: 500px;
+margin: auto;
+padding: 2% ;
+}
+
+.align{
+margin-left: 0;
+  text-align: left;
 }
 

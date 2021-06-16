@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export default class andidateService  {
+export default class CandidateService  {
    
 
     getCandidates(){
@@ -8,4 +8,7 @@ export default class andidateService  {
         return axios.get("http://localhost:8080/api/candidates/getall");
 
     }
+
+
+   
 }

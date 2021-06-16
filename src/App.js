@@ -5,29 +5,38 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './layouts/Navbar';
 import Footer from './layouts/Footer';
-import {  Container} from 'semantic-ui-react'
-import {  BrowserRouter as Router,  Switch,  Route} from "react-router-dom";
+
+import {  BrowserRouter as Router, useHistory} from "react-router-dom";
 import Dashboard from "./layouts/Dashboard"
-import {routes} from "./Routing"
+import { useState } from 'react';
+
 
 function App() {
+
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
+
+  const history =useHistory()
+
+  function handleSignOut() {
+    setIsAuthenticated(true)
+  
+  
+  }
+  function handleSignIn() {
+    setIsAuthenticated(false)
+    history.push("/home")
+  }
+
+  
   return (
+    
     <Router>
     <div className="App">
-      <Navbar />
-      <Container className="pad">
-    <Switch>
-        {routes.map((route) => (
-         
-          <Route exact={route.exact} path={route.path} key={route.title}> <Dashboard > {route.component} </Dashboard> </Route>
-        ))}
-      </Switch>
-      </Container>
-      
+      <Navbar  isAuthenticated={isAuthenticated} signOut={handleSignIn}  />
+      <div className="appPadding" ><Dashboard  isAuthenticated={isAuthenticated}   signIn={handleSignOut} /></div>
+     
+      <Footer/>
     
-    <Footer/>
-
-
     </div>
     </Router>
   

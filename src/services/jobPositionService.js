@@ -1,9 +1,9 @@
 import React from 'react'
 import axios from "axios"
-export default function jobPositionService() {
+export default class JobPositionService {
 
 
-    getJobAdvertisements()
+    getJobPositions()
     {
 
         return axios.get("http://localhost:8080/api/jobPositions/getAll");

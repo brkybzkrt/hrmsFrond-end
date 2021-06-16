@@ -1,18 +1,12 @@
 import React from 'react'
 import 'semantic-ui-css/semantic.min.css'
 import {
-    Button,
     Container,
-    Divider,
     Grid,
     Header,
     Icon,
-    Image,
     List,
-    Menu,
     Segment,
-    Sidebar,
-    Visibility,
   } from 'semantic-ui-react'
 
 export default function Footer() {
@@ -68,7 +62,7 @@ export default function Footer() {
            
             <p style={{marginTop:"2rem",marginRight:"3rem"}}>
             Copyright 
-             <span> <Icon name="copyright" ></Icon> -2021</span>
+             <span> <Icon name="copyright" ></Icon> 2021</span>
 
             </p>
 
